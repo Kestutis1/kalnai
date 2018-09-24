@@ -39,27 +39,27 @@
 
                   <div class="form-group col-md-6">
                     <label for="inputAddress">Telefono numeris</label>
-                    <input type="text" class="form-control" name="telefonas" id="telefonas" required placeholder="+370"
+                    <input type="text" class="form-control" name="telefonas" id="telefonas" maxlength="12" required placeholder="+370"
                       oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                       oninput="this.setCustomValidity('')"/>
                   </div>
 
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">E-paštas</label>
-                    <input type="email" class="form-control" name="email" id="inputEmail4" required placeholder="El. paštas"
+                    <input type="email" class="form-control" name="email" id="inputEmail4" maxlength="50" required placeholder="El. paštas"
                       oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                       oninput="this.setCustomValidity('')"/>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="idėti vardą">Vardas</label>
-                    <input type="text" class="form-control" name="vardas" id="klientoVardas" required placeholder="Vardas"
+                    <input type="text" class="form-control" name="vardas" id="klientoVardas" maxlength="50" required placeholder="Vardas"
                       oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                       oninput="this.setCustomValidity('')"  />
                   </div>
 
                 <div class="form-group col-md-6">
                   <label for="idėti pavarde">Pavardė</label>
-                  <input type="text" class="form-control" name="pavarde" id="klientoPavardė" required placeholder="Pavardė"
+                  <input type="text" class="form-control" name="pavarde" id="klientoPavardė" maxlength="50" required placeholder="Pavardė"
                       oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                       oninput="this.setCustomValidity('')"  />
                 </div>
@@ -68,7 +68,7 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <?php $viezbutis= $_GET['viezb']; ?>
-                    <input type="hidden" name="viezbutis" value="<?php echo $viezbutis; ?>">
+                    <input type="hidden" name="viezbutis" maxlength="100" value="<?php echo $viezbutis; ?>">
                     <h4> <?php echo $viezbutis; ?> </h4><br />
                     <button class="btn btn-primary" type="button" onclick="getDienuSkaicius();" >
                       Pasirinkite asmenų skaičių.
@@ -111,7 +111,7 @@
                         <option value="7">13</option>
                         <option value="7.5">14</option>
                     </select>
-                  <input type="hidden" id="siusimKaina" name="kaina" />
+                  <input type="hidden" id="siusimKaina" maxlength="11" name="kaina" />
                 </div>
 
                 <div class="form-group col-md-12">
@@ -145,15 +145,15 @@
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
-<script type="text/javascript">
-  function getDienuSkaicius() {
-      var dienuSkaicius = document.getElementById("list").value;
-      var zmoniuSkaiciaus = document.getElementById("listZmoniuSkaiciaus").value;
-      var kaina = "<?php echo $kainaKintamasis; ?>";
-      var kainaPadauginta = kaina * dienuSkaicius * zmoniuSkaiciaus ;
-    document.getElementById('viezbucioKaina').innerHTML ='Atostogų kaina '+ kainaPadauginta +' eurai' ;
-    document.getElementById('siusimKaina').value = kainaPadauginta;
-  }
+<script>
+function getDienuSkaicius() {
+    var dienuSkaicius = document.getElementById("list").value;
+    var zmoniuSkaiciaus = document.getElementById("listZmoniuSkaiciaus").value;
+    var kaina = "<?php echo $kainaKintamasis; ?>";
+    var kainaPadauginta = kaina * dienuSkaicius * zmoniuSkaiciaus ;
+  document.getElementById('viezbucioKaina').innerHTML ='Atostogų kaina '+ kainaPadauginta +' eurai' ;
+  document.getElementById('siusimKaina').value = kainaPadauginta;
+}
 </script>
 
 <?php include('footer.php') ?>

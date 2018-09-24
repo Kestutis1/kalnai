@@ -78,6 +78,7 @@
     <div class="col">
     </div>
   </div>
+  
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
