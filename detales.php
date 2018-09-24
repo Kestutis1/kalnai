@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php include 'header.php'; ?>
 
   <!-- IDEA: Puslapio Background -->
   <div class="container-fluid">
@@ -10,8 +10,7 @@
           <div class="row meniu">
             <div class="col">
 
-              <?php include('nav.php')
-                    include('db.php');  ?>
+              <?php include 'nav.php';  ?>
              <!-- IDEA: Pabaigem meniu -->
 
             </div>

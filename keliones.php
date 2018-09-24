@@ -1,13 +1,11 @@
-<?php include ('header.php') ?>
+<?php include 'header.php'; ?>
 
   <div class="container-fluid no-gutters">
     <header class="row meniu">
       <div class="col">
 
         <!-- IDEA: Meniu -->
-        <?php include ('nav.php');
-            
-                ?>
+        <?php include 'nav.php'; ?>
         <!-- IDEA: Pabaigem meniu -->
 
         <?php
@@ -114,4 +112,4 @@
     <!-- IDEA: Pabaigiau specery pradedu footer -->
   </div>
 
-  <?php include('footer.php') ?>
+  <?php include 'footer.php'; ?>

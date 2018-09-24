@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php include 'header.php'; ?>
 
   <!-- IDEA: Puslapio Background -->
   <div class="container-fluid">
@@ -12,8 +12,7 @@
 
             <?php
 
-    include('nav.php');
-    include('db.php');
+    include 'nav.php';
 
 
 
@@ -88,4 +87,4 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
-<?php include('footer.php') ?>
+<?php include 'footer.php'; ?>

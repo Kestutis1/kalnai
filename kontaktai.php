@@ -1,4 +1,4 @@
-<?php include('header.php') ?>
+<?php include 'header.php'; ?>
 
   <!-- IDEA: Puslapio Background -->
   <div class="container-fluid">
@@ -10,7 +10,7 @@
           <div class="row meniu">
             <div class="col">
 
-              <?php include('nav.php'); ?>
+              <?php include 'nav.php'; ?>
          <!-- IDEA: Pabaigem meniu -->
 
             </div>
@@ -131,4 +131,4 @@
 <script type="text/javascript">
     document.getElementById("field_terms").setCustomValidity("Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis");
 </script>
-<?php include('footer.php') ?>
+<?php include 'footer.php'; ?>
