@@ -118,7 +118,7 @@
                   <label for="komentaras" >
                     Čia galite įrašyti savo komentarą.
                   </label>
-                  <input type="text" class="form-control" name="komentaras" placeholder=""/>
+                  <input type="text" class="form-control" maxlength="500" name="komentaras" placeholder=""/>
                   </div>
                   <div class="form-check col-md-12">
                     <button type="submit" name="submitted" class="btn btn-primary">Patvirtinti užsakymą</button>
