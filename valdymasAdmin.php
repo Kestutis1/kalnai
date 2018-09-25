@@ -69,7 +69,8 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Pradedu Antraste -->
 <div class="container">
   <div class="row align-items-center">
-    <div class="col text-center atsitumiu aukstis-200">
+    <div class="col text-center atsitumiu">
+      <h4> Duomenų valdymo panelė </h4>
     </div>
   </div>
 </div>
@@ -79,17 +80,33 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Uzdarom pagrindini Background row -->
 </div>
 <!-- IDEA: Uzdarom pagrindini Background container -->
-<!-- IDEA: Antrste su mygtuku pabaigta -->
 
 
 <!-- IDEA: Čia pradedu administratoriaus valdymą su ajax -->
-  <div class="row aukstis-300">
-    <div class="col">
+  <div class="row aukstis-500">
+
+<!-- IDEA: Čia vertikalųs valdymo mygtukai -->
+    <div class="col-2">
+        <button type="button" name="button" class="btn btn-primary" onclick="pirkimuSuma()"> Pirkimų suma Eur. </button>
+    </div>
+<!-- IDEA: Čia horizantalus duomenų išvedimas -->
+    <div id="isvestis" class="col-10 duomenys">
 
     </div>
   </div>
 
 <!-- IDEA: Pabaigiau valdymo panelę -->
 <!-- IDEA: uzdarau main container -->
-
+<script type="text/javascript">
+function pirkimuSuma() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+     document.getElementById("isvestis").innerHTML = this.responseText;
+    }
+  };
+  xhttp.open("GET","ajax_info.php", true);
+  xhttp.send();
+}
+</script>
 <?php include 'footer.php'; ?>
