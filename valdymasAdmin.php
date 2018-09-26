@@ -75,6 +75,9 @@ if (isset($_POST['submit'])){
   </div>
 </div>
 </div>
+
+
+
 <!-- IDEA: Uzdarom pagrindini puslapio Background col -->
 </div>
 <!-- IDEA: Uzdarom pagrindini Background row -->
@@ -82,31 +85,29 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Uzdarom pagrindini Background container -->
 
 
-<!-- IDEA: Čia pradedu administratoriaus valdymą su ajax -->
+
+<!-- IDEA:AJAX Čia pradedu administratoriaus valdymą -->
   <div class="row aukstis-500">
 
-<!-- IDEA: Čia vertikalųs valdymo mygtukai -->
+<!-- IDEA: Čia vertikalųs valdymo mygtukai kairėje -->
     <div class="col-2">
         <button type="button" name="button" class="btn btn-primary" onclick="pirkimuSuma()"> Pirkimų suma Eur. </button>
     </div>
-<!-- IDEA: Čia horizantalus duomenų išvedimas -->
-    <div id="isvestis" class="col-10 duomenys">
 
+<!-- IDEA: Čia horizantalus duomenų išvedimas -->
+    <div id="isvestis" class="col-8 duomenys">
     </div>
+
+<!-- IDEA: Čia vertikalųs valdymo mygtukai dešnėje -->
+    <div class="col-2">
+        <button type="button" name="button" class="btn btn-primary" onclick=""> Pirkėjų vardai </button>
+    </div>
+
   </div>
+
 
 <!-- IDEA: Pabaigiau valdymo panelę -->
 <!-- IDEA: uzdarau main container -->
-<script type="text/javascript">
-function pirkimuSuma() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-     document.getElementById("isvestis").innerHTML = this.responseText;
-    }
-  };
-  xhttp.open("GET","ajax_info.php", true);
-  xhttp.send();
-}
-</script>
+
+
 <?php include 'footer.php'; ?>

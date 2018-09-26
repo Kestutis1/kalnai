@@ -1,6 +1,6 @@
 <?php
 
-include 'db.php';
+include '../db.php';
 
  // function getKkontaktai() {
  //        $manoSQL = "SELECT * FROM kontaktai";
