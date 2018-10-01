@@ -1,5 +1,5 @@
 <?php
-$rodytiZinutes = false;
+$rodytiZinutes = true;
     // $debugMode = 1;
 
     // konstantos

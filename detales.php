@@ -52,9 +52,7 @@
                   </div>
                   <div class="form-group col-md-6">
                     <label for="idėti vardą">Vardas</label>
-                    <input type="text" class="form-control" name="vardas" id="klientoVardas" maxlength="50" required placeholder="Vardas"
-                      oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
-                      oninput="this.setCustomValidity('')"  />
+                    <input type="text" class="form-control" name="vardas" id="klientoVardas" maxlength="50" required placeholder="Vardas"/>
                   </div>
 
                 <div class="form-group col-md-6">

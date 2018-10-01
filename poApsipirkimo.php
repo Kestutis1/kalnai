@@ -59,9 +59,6 @@
           <div class="row align-items-center">
             <div class="col text-center atsitumiu aukstis-200">
             <h4> Sekmingai užsisakėte kelionę. <br /> Męs su jumis susieksime 24 valandų laikotarpyje. </h4>
-             <br /><button class="btn btn-primary" type="button" onclick= laikas();>
-                 Dabartinė data ir laikas.</button>
-             <h4 id="demo"></h4>
             </div>
             </div>
          </div>
@@ -78,7 +75,7 @@
     <div class="col">
     </div>
   </div>
-  
+
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
