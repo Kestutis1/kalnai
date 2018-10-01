@@ -27,7 +27,7 @@
               $kaina = mysqli_real_escape_string(getPrisijungimas(), $_POST['kaina']);
               $viezb = mysqli_real_escape_string(getPrisijungimas(), $_POST['viezbutis']);
 
-            $manoSQL = "INSERT INTO `pirkeju` (`vartotojo id`, `vartotojo_vardas`, `vartotojo_pavardė`, `komentaras`, `e_pastas`, `telefonas`, `dienu`, `asmenu`, `kaina`, `viezbutis`) VALUES (NULL, '$vardas', '$pavarde', '$komentaras', '$email', '$telefonas', '$dienu', '$asmenu', '$kaina', '$viezb'); ";
+            $manoSQL = "INSERT INTO `pirkeju` (`id`, `vartotojo_vardas`, `vartotojo_pavardė`, `komentaras`, `e_pastas`, `telefonas`, `dienu`, `asmenu`, `kaina`, `viezbutis`) VALUES (NULL, '$vardas', '$pavarde', '$komentaras', '$email', '$telefonas', '$dienu', '$asmenu', '$kaina', '$viezb'); ";
             $arPavyko = mysqli_query(getPrisijungimas(), $manoSQL);
                   }
 
