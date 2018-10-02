@@ -39,47 +39,52 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">E-paštas</label>
-                    <input type="email" name="email" class="form-control" id="inputEmail4" placeholder="El. paštas"
+                    <input title="Šį lauką reikia užpildyti" type="email" name="email" class="form-control" id="inputEmail4" placeholder="El. paštas"
                         required
                         oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                         oninput="this.setCustomValidity('')"/>
                   </div>
                   <div class="form-group col-md-6">
                     <label for="idėti vardą">Vardas</label>
-                    <input type="text" name="vardas" class="form-control" id="inputVardas" placeholder="Vardas"
+                    <input title="Šį lauką reikia užpildyti" type="text" name="vardas" class="form-control" id="inputVardas" placeholder="Vardas"
                         required
                         oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                         oninput="this.setCustomValidity('')"/>
                   </div>
                 </div>
+
                 <div class="form-group">
                   <label for="inputAddress">Adresas</label>
                   <input type="text" name="gyvenamoji" class="form-control" id="inputAddress" placeholder="Jūsų gyvenamoji vieta"/>
                 </div>
+
                 <div class="form-group">
                   <label for="inputAddress2">Kalnų kurorto adresas</label>
                   <input type="text" name="kurortas" class="form-control" id="inputAddress2" placeholder="Vietovė kur planuojate vykti"/>
                 </div>
+
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputCity">Miestas</label>
                     <input type="text" name="miestas" class="form-control" id="inputCity"/>
                   </div>
+
                   <div class="form-group col-md-4">
                     <label for="inputState">Šalis</label>
                     <input type="text" id="inputState" name="salis" class="form-control"/>
                   </div>
+
                   <div class="form-group col-md-2">
                     <label for="inputZip">Pašto kodas</label>
                     <input type="text" name="pKodas" class="form-control" id="inputZip"/>
                   </div>
                 </div>
+
                 <div class="form-group">
                   <div class="form-check">
-
-
-             <input  onchange="this.setCustomValidity(validity.valueMissing ? 'Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis' : '');"
-                    id="field_terms" type="checkbox" required name="salygos">
+             <input onchange="this.setCustomValidity(validity.valueMissing ? 'Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis' : '');"
+                    id="field_terms" type="checkbox" required name="salygos"
+              title="Reikia susipažinti ir pažymėti prieš siunčiant" id="field_terms" type="checkbox" required name="salygos">
                 <label>Susipažinau su sąlygomis ir taisyklėmis: </label>
                 <button type="button" class="taisykles" data-toggle="modal" data-target="#exampleModalLong"> Taisyklės </button>
 
@@ -88,7 +93,7 @@
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Sutinkate patikėti asmeninius duomenis </h5>
+                    <h5 class="modal-title" id="exampleModalLongTitle"> Sutinkate patikėti asmeninius duomenis </h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -130,6 +135,7 @@
 <!-- IDEA: uzdarau main container -->
 
 
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

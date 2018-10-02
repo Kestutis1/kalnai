@@ -12,3 +12,6 @@ function pirkimuSuma() {
   xhttp.open("GET"," /ajaxLibrary/ajax_info.php", true);
   xhttp.send();
 }
+// $(document).ready(function(){
+//     document.getElementById("field_terms").setCustomValidity("Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis");
+// });

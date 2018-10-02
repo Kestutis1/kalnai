@@ -39,14 +39,14 @@
 
                   <div class="form-group col-md-6">
                     <label for="inputAddress">Telefono numeris</label>
-                    <input type="text" class="form-control" name="telefonas" id="telefonas" maxlength="12" required placeholder="+370"
+                    <input title="Šį lauką reikia užpildyti" type="text" class="form-control" name="telefonas" id="telefonas" maxlength="12" required placeholder="+370"
                       oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                       oninput="this.setCustomValidity('')"/>
                   </div>
 
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">E-paštas</label>
-                    <input type="email" class="form-control" name="email" id="inputEmail4" maxlength="50" required placeholder="El. paštas"
+                    <input title="Šį lauką reikia užpildyti" type="email" class="form-control" name="email" id="inputEmail4" maxlength="50" required placeholder="El. paštas"
                       oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                       oninput="this.setCustomValidity('')"/>
                   </div>
@@ -57,7 +57,7 @@
 
                 <div class="form-group col-md-6">
                   <label for="idėti pavarde">Pavardė</label>
-                  <input type="text" class="form-control" name="pavarde" id="klientoPavardė" maxlength="50" required placeholder="Pavardė"
+                  <input title="Šį lauką reikia užpildyti" type="text" class="form-control" name="pavarde" id="klientoPavardė" maxlength="50" required placeholder="Pavardė"
                       oninvalid="this.setCustomValidity('Šį lauką reikia užpildyti')"
                       oninput="this.setCustomValidity('')"  />
                 </div>
