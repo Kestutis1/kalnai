@@ -35,7 +35,7 @@
             <div class="col text-center">
 
               <!-- IDEA: Ikeliu forma -->
-              <form name="kontaktai" action="poKontaktu.php" method="post">
+              <form name="kontaktai" action="poKontaktu.php" method="post" onsubmit="return taisykliuVarnelė(this)";>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputEmail4">E-paštas</label>
@@ -82,11 +82,18 @@
 
                 <div class="form-group">
                   <div class="form-check">
-             <input onchange="this.setCustomValidity(validity.valueMissing ? 'Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis' : '');"
-                    id="field_terms" type="checkbox" required name="salygos"
-              title="Reikia susipažinti ir pažymėti prieš siunčiant" id="field_terms" type="checkbox" required name="salygos">
+             <input
+                id="field_terms" type="checkbox" required name="salygos"
+                  title="Susipažinti ir pažymėti prieš siunčiant"  type="checkbox"
+                  onchange="this.setCustomValidity(validity.valueMissing ? 'sutikite' : '');"/>
+              <script type="text/javascript">
+                  document.getElementById("field_terms").setCustomValidity("Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis");
+              </script>
+
                 <label>Susipažinau su sąlygomis ir taisyklėmis: </label>
                 <button type="button" class="taisykles" data-toggle="modal" data-target="#exampleModalLong"> Taisyklės </button>
+
+
 
           <!--bootstrap Modal taisyklės-->
             <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
@@ -134,12 +141,4 @@
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
-
-</script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/min.js"></script>
-<script type="text/javascript" src="/js/kontaktu.js"></script>
-</body>
-</html>
+<?php include "footer.php"; ?>

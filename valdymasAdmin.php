@@ -69,7 +69,7 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Pradedu Antraste -->
 <div class="container">
   <div class="row align-items-center">
-    <div class="col text-center atsitumiu">
+    <div class="col text-center atsistumiu">
       <h4> Duomenų valdymo panelė </h4>
     </div>
   </div>
