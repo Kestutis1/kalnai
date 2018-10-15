@@ -2,7 +2,7 @@
 <?php include 'header.php'; ?>
 
   <!-- IDEA: Puslapio Background -->
-  
+
   <div class="container-fluid">
     <div class="row">
       <div class="col box-wraper">
@@ -100,4 +100,4 @@
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
-<?php include 'footer.php'; ?>
+<?php include_once 'footer.php'; ?>

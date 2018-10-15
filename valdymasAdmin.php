@@ -69,7 +69,7 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Pradedu Antraste -->
 <div class="container">
   <div class="row align-items-center">
-    <div class="col text-center atsitumiu">
+    <div class="col text-center atsistumiu">
       <h4> Duomenų valdymo panelė </h4>
     </div>
   </div>
@@ -90,8 +90,9 @@ if (isset($_POST['submit'])){
   <div class="row aukstis-500">
 
 <!-- IDEA: Čia vertikalųs valdymo mygtukai kairėje -->
-    <div class="col-2">
-        <button type="button" name="button" class="btn btn-primary" onclick="pirkimuSuma()"> Pirkimų suma Eur. </button>
+    <div class="col-2 text-center">
+        <button type="button" name="button" class="btn btn-primary" onclick="pirkimuSuma()"> Pirkimų suma Eur. </button><br />
+        <button type="button" name="button" class="btn btn-primary" id="varduID2"> Pavyko 2 </button>
     </div>
 
 <!-- IDEA: Čia horizantalus duomenų išvedimas -->
@@ -99,15 +100,15 @@ if (isset($_POST['submit'])){
     </div>
 
 <!-- IDEA: Čia vertikalųs valdymo mygtukai dešnėje -->
-    <div class="col-2">
-        <button type="button" name="button" class="btn btn-primary" onclick=""> Pirkėjų vardai </button>
+    <div class="col-2 text-center">
+        <button type="button" name="button" class="btn btn-primary" id="varduID"> Pirkėjų vardai </button><br />
+        <button type="button" name="button" class="btn btn-primary" id="varduID3"> Pavyko 3 </button>
     </div>
 
   </div>
-
 
 <!-- IDEA: Pabaigiau valdymo panelę -->
 <!-- IDEA: uzdarau main container -->
 
 
-<?php include 'footer.php'; ?>
+<?php include_once 'footer.php'; ?>

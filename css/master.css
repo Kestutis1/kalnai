@@ -70,7 +70,7 @@ h2 {
   margin-bottom: 30px;
 }
 
-.atsitumiu {
+.atsistumiu {
   margin-top: 20px;
 }
 
@@ -94,6 +94,11 @@ p {
   color: rgb(40, 217, 11);
   font-size: 18px;
   text-shadow: 1px 2px white;
+}
+
+button {
+  min-width: 154px;
+  margin-bottom: 2px;
 }
 
 .batasTekstas {

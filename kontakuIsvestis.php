@@ -67,4 +67,4 @@
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
-<?php include 'footer.php'; ?>
+<?php include_once 'footer.php'; ?>

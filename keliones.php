@@ -53,7 +53,7 @@
     <!-- IDEA: Isidedu specery -->
     <div class="row aukstis-150">
       <div class="col align-self-end">
-        <h2> Šiuo metu siūlome vykti į:</h2>
+        <h2> Šiuo metu siūlome vykti:</h2>
       </div>
     </div>
     <!-- IDEA: Pabaigiau specery pradedu kelioniu pasirinkima -->
@@ -112,4 +112,4 @@
     <!-- IDEA: Pabaigiau specery pradedu footer -->
   </div>
 
-  <?php include 'footer.php'; ?>
+  <?php include_once 'footer.php'; ?>

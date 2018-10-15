@@ -143,7 +143,8 @@
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
-<script>
+<script type="text/javascript">
+
 function getDienuSkaicius() {
     var dienuSkaicius = document.getElementById("list").value;
     var zmoniuSkaiciaus = document.getElementById("listZmoniuSkaiciaus").value;
@@ -152,6 +153,7 @@ function getDienuSkaicius() {
   document.getElementById('viezbucioKaina').innerHTML ='Atostogų kaina '+ kainaPadauginta +' eurai' ;
   document.getElementById('siusimKaina').value = kainaPadauginta;
 }
+
 </script>
 
-<?php include('footer.php') ?>
+<?php include_once 'footer.php' ?>

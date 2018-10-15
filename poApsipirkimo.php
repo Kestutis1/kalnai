@@ -54,10 +54,10 @@
           <p>Galime suteikti visą papildomą jus dominančią informaciją apie poilsį kalnuose.</p>
         </div>
 
-        <!-- IDEA: Pradedu Antraste su Mygtuku -->
+        <!-- IDEA: Pradedu Antraste  -->
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col text-center atsitumiu aukstis-200">
+          <div class="row align-items-center aukstis-300">
+            <div class="col ">
             <h4> Sekmingai užsisakėte kelionę. <br /> Męs su jumis susieksime 24 valandų laikotarpyje. </h4>
             </div>
             </div>
@@ -79,4 +79,4 @@
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
-<?php include 'footer.php'; ?>
+<?php include_once 'footer.php'; ?>
