@@ -86,6 +86,13 @@
                 id="field_terms" type="checkbox" required name="salygos"
                   title="Susipažinti ir pažymėti prieš siunčiant"  type="checkbox"
                   onchange="this.setCustomValidity(validity.valueMissing ? 'sutikite' : '');"/>
+<<<<<<< HEAD
+=======
+              <script type="text/javascript">
+                  document.getElementById("field_terms").setCustomValidity("Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis");
+              </script>
+
+>>>>>>> b5cb6c2863ac28285002caf060cdd9204a667e23
                 <label>Susipažinau su sąlygomis ir taisyklėmis: </label>
                 <button type="button" class="taisykles" data-toggle="modal" data-target="#exampleModalLong"> Taisyklės </button>
 
@@ -137,6 +144,10 @@
   <!-- IDEA: Pabaigiau specery pradedu footer -->
 <!-- IDEA: uzdarau main container -->
 
+<<<<<<< HEAD
 <script type="text/javascript" src="js/mano.js"></script>
 
 <?php include_once "footer.php"; ?>
+=======
+<?php include "footer.php"; ?>
+>>>>>>> b5cb6c2863ac28285002caf060cdd9204a667e23
