@@ -92,7 +92,7 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Čia vertikalųs valdymo mygtukai kairėje -->
     <div class="col-2 text-center">
         <button type="button" name="button" class="btn btn-primary" onclick="pirkimuSuma()"> Pirkimų suma Eur. </button><br />
-        <button type="button" name="button" class="btn btn-primary" id="varduID2"> Pavyko 2 </button>
+        <button type="button" name="button" class="btn btn-primary" id="varduID2"> Visi duomenys </button>
     </div>
 
 <!-- IDEA: Čia horizantalus duomenų išvedimas -->

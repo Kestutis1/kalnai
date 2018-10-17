@@ -1,10 +1,6 @@
 // IDEA: pasitikrinu ar veikia scriptas
 console.log("Labas");
 
-// IDEA: kontaktų puslapyje uždedu paaiškinimą taisyklių pažymėjimui
-function salyguŽinutė () {
-  document.getElementById("field_terms").setCustomValidity("Pirma sutikite mums patikėti ir tavrkyti savo asmeninius duomenis");
-  }
 
 // IDEA: AJAX kodai apačioje valdymasAdmin.php puslapiui
 function pirkimuSuma () {
@@ -20,6 +16,7 @@ function pirkimuSuma () {
 
 // IDEA: pradedu daug ajax užklausų naudodamas Jquery metodą.
  $(document).ready(function() {
+
 
    $("#varduID").click(function(){
       pirkėjuVardai ();
@@ -59,9 +56,11 @@ function pirkimuSuma () {
     cache: false,
     url: "/ajaxLibrary/daugajax.php",
     type: "post",
+    // dataType: "json",
     data: data,
     success: function(phpresponse){
-      alert(phpresponse);
+        // alert(phpresponse);
+        $('#isvestis').html(phpresponse);
     }
   });
 }
