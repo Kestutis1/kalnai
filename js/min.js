@@ -34,16 +34,19 @@ function pirkimuSuma () {
 
 
   function pirkėjuVardai () {
-    var method = "vardai";
-    var data = "Method=" + method;
+  var method = "vardai";
+  var data = "Method=" + method;
 
   $.ajax ({
-    cache: false,
+     // dataType: "json",
     url: "/ajaxLibrary/daugajax.php",
     type: "post",
+    cache: false,
     data: data,
-    success: function(phpresponse){
-      alert(phpresponse);
+
+    success: function(data){
+        $('#isvestis').html(data.content);
+        $('#isvestis').html(data.colour);
     }
   });
 }
@@ -53,29 +56,36 @@ function pirkimuSuma () {
     var data = "Method=" + method;
 
   $.ajax ({
-    cache: false,
+
+     // dataType: "json",
     url: "/ajaxLibrary/daugajax.php",
     type: "post",
-    // dataType: "json",
+    cache: false,
     data: data,
-    success: function(phpresponse){
-        // alert(phpresponse);
-        $('#isvestis').html(phpresponse);
+
+    success: function(data){
+        $('#isvestis').html(data.content);
+        $('#isvestis').html(data.colour);
     }
   });
 }
 
   function pirkėjuVardai3 () {
-    var method = "vardai3";
-    var data = "Method=" + method;
+  var method = "vardai3";
+  var data = "Method=" + method;
+
 
   $.ajax ({
-    cache: false,
+
+   // dataType: "json",
     url: "/ajaxLibrary/daugajax.php",
-    type: "post",
     data: data,
-    success: function(phpresponse){
-      alert(phpresponse);
+    cache: false,
+    type: "post",
+
+    success: function(data){
+        $('#isvestis').html(data.content);
+        $('#isvestis').html(data.colour);
     }
   });
 }
