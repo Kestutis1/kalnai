@@ -1,6 +1,37 @@
 // IDEA: pasitikrinu ar veikia scriptas
 console.log("Labas");
 
+// IDEA: valdymo puslapio mygtuko pozicija prilausomai nuo ekrano dyžio
+var mygtukas = $("#varduID");
+var mygtukas1 = $("#varduID1");
+var mygtukas2 = $("#varduID2");
+var mygtukas3 = $("#varduID3");
+
+
+onRisize = function() {
+  if ($ (window).width() < 1100) {
+
+      $("div.mobileMeniu").append(mygtukas);
+      $("div.mobileMeniu1").append(mygtukas1);
+      $("div.mobileMeniu2").append(mygtukas2);
+      $("div.mobileMeniu3").append(mygtukas3);
+
+      }
+    }
+    
+ onRisize2 = function() {
+   if ($ (window).width() > 1100) {
+
+        $("div.valdymoKaire").append(mygtukas1, mygtukas2);
+        $("div.valdymoDesnia").append(mygtukas, mygtukas3);
+
+   }
+}
+
+$(document).ready(onRisize);
+$(window).resize(onRisize);
+$(window).resize(onRisize2);
+
 
 // IDEA: AJAX kodai apačioje valdymasAdmin.php puslapiui
 function pirkimuSuma () {
@@ -34,19 +65,16 @@ function pirkimuSuma () {
 
 
   function pirkėjuVardai () {
-  var method = "vardai";
-  var data = "Method=" + method;
+    var method = "vardai";
+    var data = "Method=" + method;
 
   $.ajax ({
-     // dataType: "json",
+    cache: false,
     url: "/ajaxLibrary/daugajax.php",
     type: "post",
-    cache: false,
     data: data,
-
-    success: function(data){
-        $('#isvestis').html(data.content);
-        $('#isvestis').html(data.colour);
+    success: function(phpresponse){
+      alert(phpresponse);
     }
   });
 }
@@ -56,36 +84,29 @@ function pirkimuSuma () {
     var data = "Method=" + method;
 
   $.ajax ({
-
-     // dataType: "json",
+    cache: false,
     url: "/ajaxLibrary/daugajax.php",
     type: "post",
-    cache: false,
+    // dataType: "json",
     data: data,
-
-    success: function(data){
-        $('#isvestis').html(data.content);
-        $('#isvestis').html(data.colour);
+    success: function(phpresponse){
+        // alert(phpresponse);
+        $('#isvestis').html(phpresponse);
     }
   });
 }
 
   function pirkėjuVardai3 () {
-  var method = "vardai3";
-  var data = "Method=" + method;
-
+    var method = "vardai3";
+    var data = "Method=" + method;
 
   $.ajax ({
-
-   // dataType: "json",
-    url: "/ajaxLibrary/daugajax.php",
-    data: data,
     cache: false,
+    url: "/ajaxLibrary/daugajax.php",
     type: "post",
-
-    success: function(data){
-        $('#isvestis').html(data.content);
-        $('#isvestis').html(data.colour);
+    data: data,
+    success: function(phpresponse){
+      alert(phpresponse);
     }
   });
 }

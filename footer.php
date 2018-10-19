@@ -2,10 +2,13 @@
 <footer class="container-fluid no-gutters">
   <div class="row align-items-center aukstis-85">
     <div class="col">
-      <p>&copy; 2018 Kęstutis Morkevičius</p>
+      <p> &copy; 2018 Kęstutis Morkevičius </p>
     </div>
     <div class="col">
-      <p> Lietuva Kaunas Pakalnės 42 <span class="space"> </span> <i class="material-icons"> call </i> +370654212 </p>
+      <p> Lietuva Kaunas Pakalnės 42 </p>
+    </div>
+    <div class="col">
+      <p> <i class="material-icons"> call </i> +370654212 </p>
     </div>
     <div class="col">
       <p> <i class="material-icons"> email </i> djkestutis@yahoo.com </p>

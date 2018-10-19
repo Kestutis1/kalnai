@@ -69,8 +69,22 @@ if (isset($_POST['submit'])){
 <!-- IDEA: Pradedu Antraste -->
 <div class="container">
   <div class="row align-items-center">
-    <div class="col text-center atsistumiu">
+    <div class="col  atsistumiu">
       <h4> Duomenų valdymo panelė </h4>
+    </div>
+  </div>
+</div>
+
+<!-- IDEA: čia įkeliu valdyma mobile vietoj didelio ekrano-->
+<div class="container">
+  <div class="row align-items-center">
+    <div class="col text-center mobileMeniu">
+    </div>
+    <div class="col text-center mobileMeniu1">
+    </div>
+    <div class="col text-center mobileMeniu2">
+    </div>
+    <div class="col text-center mobileMeniu3">
     </div>
   </div>
 </div>
@@ -90,9 +104,9 @@ if (isset($_POST['submit'])){
   <div class="row aukstis-500">
 
 <!-- IDEA: Čia vertikalųs valdymo mygtukai kairėje -->
-    <div class="col-2 text-center">
-        <button type="button" name="button" class="btn btn-primary" onclick="pirkimuSuma()"> Pirkimų suma Eur. </button><br />
-        <button type="button" name="button" class="btn btn-primary" id="varduID2"> Visi duomenys </button>
+    <div class="col-2 text-center valdymoKaire">
+        <button type="button" name="button" class="btn btn-primary sleptirodyti" id="varduID1" onclick="pirkimuSuma()"> Pirkimų suma Eur. </button><br />
+        <button type="button" name="button" class="btn btn-primary sleptirodyti" id="varduID2"> Visi duomenys </button>
     </div>
 
 <!-- IDEA: Čia horizantalus duomenų išvedimas -->
@@ -100,9 +114,9 @@ if (isset($_POST['submit'])){
     </div>
 
 <!-- IDEA: Čia vertikalųs valdymo mygtukai dešnėje -->
-    <div class="col-2 text-center">
-        <button type="button" name="button" class="btn btn-primary" id="varduID"> Pirkėjų vardai </button><br />
-        <button type="button" name="button" class="btn btn-primary" id="varduID3"> Pavyko 3 </button>
+    <div class="col-2 text-center valdymoDesnia">
+        <button type="button" name="button" class="btn btn-primary sleptirodyti" id="varduID"> Pirkėjų vardai </button><br />
+        <button type="button" name="button" class="btn btn-primary sleptirodyti" id="varduID3"> Pavyko 3 </button>
     </div>
 
   </div>
