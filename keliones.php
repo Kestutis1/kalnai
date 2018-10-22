@@ -29,7 +29,7 @@
   <div class="container">
     <main class="row">
       <!-- IDEA: Pradedu Nuotrauku shou -->
-      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade col-10" data-ride="carousel">
+      <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade col-12 col-md-12 col-lg-10" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img class="d-block w-100" src="./img/bright-clouds-cold-618833.jpg" alt="First slide">
@@ -43,7 +43,7 @@
         </div>
       </div>
       <!-- IDEA: uzbaigiu nuotrauku shou -->
-      <div class="col-md-2 col-sm col-xs align-self-center">
+      <div class="col-12 col-md-12 col-lg-2 align-self-center">
         <h4> Antraste </h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
           irure dolor.</p>
@@ -57,8 +57,8 @@
       </div>
     </div>
     <!-- IDEA: Pabaigiau specery pradedu kelioniu pasirinkima -->
-    <div class="row">
-      <div class="col-3">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3 align-self-center">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="./img/kalnaiMaza.jpg" alt="Card image cap">
           <div class="card-body">
@@ -69,7 +69,7 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3 align-self-center">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="./img/bright-clouds-cold-618833.jpg" alt="Card image cap">
           <div class="card-body">
@@ -80,7 +80,7 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3 align-self-center">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="./img/landscape-mountains-nature-67517.jpg" alt="Card image cap">
           <div class="card-body">
@@ -91,7 +91,7 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-12 col-sm-6 col-md-6 col-lg-3 align-self-center">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="./img/alps-barn-clouds-358532.jpg" alt="Card image cap">
           <div class="card-body">

@@ -101,7 +101,7 @@ if (isset($_POST['submit'])){
 
 
 <!-- IDEA:AJAX Čia pradedu administratoriaus valdymą -->
-  <div class="row aukstis-500">
+  <div class="row aukstis-525">
 
 <!-- IDEA: Čia vertikalųs valdymo mygtukai kairėje -->
     <div class="col-2 text-center valdymoKaire">
@@ -110,13 +110,13 @@ if (isset($_POST['submit'])){
     </div>
 
 <!-- IDEA: Čia horizantalus duomenų išvedimas -->
-    <div id="isvestis" class="col-8 duomenys">
+    <div id="isvestis" class="col-8 duomenys text-center">
     </div>
 
 <!-- IDEA: Čia vertikalųs valdymo mygtukai dešnėje -->
     <div class="col-2 text-center valdymoDesnia">
         <button type="button" name="button" class="btn btn-primary sleptirodyti" id="varduID"> Pirkėjų vardai </button><br />
-        <button type="button" name="button" class="btn btn-primary sleptirodyti" id="varduID3"> Pavyko 3 </button>
+        <button type="button" name="button" class="btn btn-primary sleptirodyti" id="varduID3"> Pirkėjų pavardės </button>
     </div>
 
   </div>

@@ -18,7 +18,7 @@ onRisize = function() {
 
       }
     }
-    
+
  onRisize2 = function() {
    if ($ (window).width() > 1100) {
 
@@ -74,7 +74,7 @@ function pirkimuSuma () {
     type: "post",
     data: data,
     success: function(phpresponse){
-      alert(phpresponse);
+      $('#isvestis').html(phpresponse);
     }
   });
 }
@@ -87,10 +87,8 @@ function pirkimuSuma () {
     cache: false,
     url: "/ajaxLibrary/daugajax.php",
     type: "post",
-    // dataType: "json",
     data: data,
     success: function(phpresponse){
-        // alert(phpresponse);
         $('#isvestis').html(phpresponse);
     }
   });
@@ -106,7 +104,7 @@ function pirkimuSuma () {
     type: "post",
     data: data,
     success: function(phpresponse){
-      alert(phpresponse);
+      $('#isvestis').html(phpresponse);
     }
   });
 }

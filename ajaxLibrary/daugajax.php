@@ -7,20 +7,28 @@ $result = array (
       'pavarde' => 'Morkevicius',
       'spalva' => 'green'
 );
-if($_POST) {
- if ($method == 'vardai') {
-    echo $result['vardas'];
- }
-elseif ($method == 'vardai2') {
-    echo $result['pavarde'];
-}
-elseif ($method == 'vardai3') {
-    echo $result['spalva'];
-  }
-}
+// if($_POST) {
+//  if ($method == 'vardai') {
+//     echo $result['vardas'];
+//  }
+// elseif ($method == 'vardai2') {
+//     echo $result['pavarde'];
+// }
+// elseif ($method == 'vardai3') {
+//     echo $result['spalva'];
+//   }
+// }
 function vardai() {
-        echo 'pavyko';
-         }
+
+  $SQL = "SELECT * FROM pirkeju vartotojo_vardas";
+  $rezultatas = mysqli_query( getPrisijungimas(), $SQL);
+  while ( $varduMasyvas = mysqli_fetch_assoc($rezultatas))
+      {
+        echo $varduMasyvas['vartotojo_vardas']."<br /> ";
+      }
+  }
+
+
 function vardai2() {
   $visikontaktai = getKontaktai();
   while ( $kontaktai = mysqli_fetch_assoc($visikontaktai))
@@ -36,6 +44,11 @@ function vardai2() {
         }
    }
 function vardai3() {
-        echo 'pavyko3';
+        $SQL = "SELECT * FROM pirkeju vartotojo_pavardė";
+        $rezultatai = mysqli_query( getPrisijungimas(), $SQL);
+        while ($pavardziuMasyvas = mysqli_fetch_assoc($rezultatai))
+        {
+          echo $pavardziuMasyvas['vartotojo_pavardė']."<br />";
+        }
    }
   ?>
